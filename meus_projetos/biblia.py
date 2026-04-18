@@ -10,7 +10,7 @@ def janela1 ():
     janela1.title('Biblia Sagrada')
     janela1.geometry('600x500')
     Label(janela1, text='qual capitulo?', font=('arial', 30), bg='lightblue', anchor='center').pack(fill='x')
-    def ge ():
+    def  ge ():
             janela2 = Tk()
             janela2.title('Biblia sagrada')
             janela2.geometry('535x600')
@@ -21,10 +21,11 @@ def janela1 ():
                 vers1 = Label(janela3, text='¹ No princípio criou Deus os céus e a terra.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers1.grid(row=20, column=20)
                 vers1.pack(fill='x') 
+                proximo = Button(janela3, text='proximo', command=ger2)
+                proximo.pack(side=BOTTOM)
                 janela3.mainloop()
             ger1 = Button(janela2, text='VERSICULO: 1', command=ger1)
             ger1.grid(row=0, column=0)
-    
             def ger2 ():
                 janela4 = Tk()
                 janela4.title('Biblia Sagrada') 
@@ -326,12 +327,24 @@ def janela1 ():
             ger30 = Button(janela2, text='VERSICULO: 31', command=ger30)
             ger30.grid(row=5, column=0)
 
-
-            janela2.mainloop()
-    janela = Button(janela1, text='capiulo: 1', command=ge)
+    capitulo2 = Button(janela1, text='capitulo: 2', command=cap1)
+    capitulo2.pack(side=TOP)
+    janela = Button(janela1, text='capitulo: 1', command=ge)
     janela.pack(side=TOP)
     janela1.mainloop()
 
+def cap1 ():
+    janela2 = Tk()
+    janela2.title('Biblia sagrada')
+    janela2.geometry('535x600')
+    def versiculo1 ():
+        janela3 = Tk()
+        janela3.title('Biblia Sagrada')
+        janela3.geometry('1300x876')
+        vars1 = Label(janela3, text='¹ Assim os céus, a terra e todo o seu exército foram acabados.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars1.pack(fill='x')
+    versiculo1 = Button(janela2, text='VERSICULO: 1', command=versiculo1)
+    versiculo1.grid(row=0, column=0)
 
 ge = Button(janela, text='Genisis', command=janela1)
 ge.pack(side=TOP)
