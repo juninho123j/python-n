@@ -9,6 +9,9 @@ def janela1 ():
     janela1 = Tk()
     janela1.title('Biblia Sagrada')
     janela1.geometry('600x500')
+    Canvas = tk.Canvas(janela1,)
+    Scrollbar = tk.Scrollbar(janela1, orient='vertical', command=Canvas.yview)
+    Scrollbar.pack(side='right', fill='y')
     Label(janela1, text='qual capitulo?', font=('arial', 30), bg='lightblue', anchor='center').pack(fill='x')
     def  ge ():
             janela2 = Tk()
@@ -330,14 +333,17 @@ def janela1 ():
     
     janela = Button(janela1, text='capitulo: 1', command=ge)
     janela.pack(side=TOP)
-    capitulo2 = Button(janela1, text='capitulo: 2', command=cap1)
+    capitulo2 = Button(janela1, text='capitulo: 2', command=cap2)
     capitulo2.pack(side=TOP)
+    #capitulo3 = Button(janela1, text='capitulo: 3', command=cap3)
+    #capitulo3.pack(side=TOP)
     janela1.mainloop()
 
-def cap1 ():
+def cap2 ():
     janela2 = Tk()
     janela2.title('Biblia sagrada')
     janela2.geometry('535x600')
+    
     def versiculo1 ():
         janela3 = Tk()
         janela3.title('Biblia Sagrada')
@@ -346,22 +352,60 @@ def cap1 ():
         vars1.pack(fill='x')
     versiculo1 = Button(janela2, text='VERSICULO: 1', command=versiculo1)
     versiculo1.grid(row=0, column=0)
+    
     def versiculo2 ():
         janela4 = Tk()
         janela4.title('Biblia Sagrada') 
         janela4.geometry('1300x876')
-        vars2 = Label(janela4, text='² E no sétimo dia Deus já tinha acabado a obra que tinha feito; e descansou no sétimo dia de toda a obra que tinha feito.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars2 = Label(janela4, text='² E no sétimo dia Deus já tinha acabado a obra que tinha feito;\n e descansou no sétimo dia de toda a obra que tinha feito.', font=('arial', 30), bg='lightblue', anchor='center')
         vars2.pack(fill='x')
     versiculo2 = Button(janela2, text='VERSICULO: 2', command=versiculo2)
     versiculo2.grid(row=0, column=1)
+    
     def versiculo3 ():
         janela5 = Tk()
         janela5.title('Biblia Sagrada')
         janela5.geometry('1300x876')
-        vars3 = Label(janela5, text='³ E Deus abençoou o sétimo dia e o santificou, porque nele descansou de toda a obra que tinha criado e feito.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars3 = Label(janela5, text='³ E Deus abençoou o sétimo dia e o santificou,\n porque nele descansou de toda a obra que tinha criado e feito.', font=('arial', 30), bg='lightblue', anchor='center')
         vars3.pack(fill='x')
     versiculo3 = Button(janela2, text='VERSICULO: 3', command=versiculo3)
     versiculo3.grid(row=0, column=2)
+    def versiculo4 ():
+        janela6 = Tk()
+        janela6.title('Biblia Sagrada')
+        janela6.geometry('1300x876')
+        vars4 = Label(janela6, text='⁴ Estas são as origens dos céus e da terra, quando foram criados,\n no dia em que o Senhor Deus fez a terra e os céus,', font=('arial', 30), bg='lightblue', anchor='center')
+        vars4.pack(fill='x')
+    versiculo4 = Button(janela2, text='VERSICULO: 4', command=versiculo4)
+    versiculo4.grid(row=0, column=3)
+
+    def versiculo5 ():
+        janela7 = Tk()
+        janela7.title('Biblia Sagrada')
+        janela7.geometry('1300x876')
+        vars5 = Label(janela7, text='⁵ e toda planta do campo antes de crescer na terra,\n e toda erva do campo antes de brotar, porque o Senhor Deus ainda\n não tinha feito chover sobre a terra,\n e não havia homem para cultivar a terra.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars5.pack(fill='x')
+    versiculo5 = Button(janela2, text='VERSICULO: 5', command=versiculo5)
+    versiculo5.grid(row=0, column=4)
+
+    def versiculo6 ():
+        janela8 = Tk()
+        janela8.title('Biblia Sagrada')
+        janela8.geometry('1300x876')
+        vars6 = Label(janela8, text='⁶ Mas subia da terra um vapor, o qual regava toda a face da terra.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars6.pack(fill='x')
+    versiculo6 = Button(janela2, text='VERSICULO: 6', command=versiculo6)
+    versiculo6.grid(row=0, column=5)
+
+    def versiculo7 ():
+        janela9 = Tk()
+        janela9.title('Biblia Sagrada')
+        janela9.geometry('1300x876')
+        vars7 = Label(janela9, text='⁷ E formou o Senhor Deus o homem do pó da terra,\n e soprou em suas narinas o fôlego de vida;\n e o homem tornou-se alma vivente.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars7.pack(fill='x')
+    versiculo7 = Button(janela2, text='VERSICULO: 7', command=versiculo7)
+    versiculo7.grid(row=1, column=0)
+
 
 
 ge = Button(janela, text='Genisis', command=janela1)
