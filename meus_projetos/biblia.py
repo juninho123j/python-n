@@ -327,10 +327,11 @@ def janela1 ():
             ger30 = Button(janela2, text='VERSICULO: 31', command=ger30)
             ger30.grid(row=5, column=0)
 
-    capitulo2 = Button(janela1, text='capitulo: 2', command=cap1)
-    capitulo2.pack(side=TOP)
+    
     janela = Button(janela1, text='capitulo: 1', command=ge)
     janela.pack(side=TOP)
+    capitulo2 = Button(janela1, text='capitulo: 2', command=cap1)
+    capitulo2.pack(side=TOP)
     janela1.mainloop()
 
 def cap1 ():
@@ -345,6 +346,23 @@ def cap1 ():
         vars1.pack(fill='x')
     versiculo1 = Button(janela2, text='VERSICULO: 1', command=versiculo1)
     versiculo1.grid(row=0, column=0)
+    def versiculo2 ():
+        janela4 = Tk()
+        janela4.title('Biblia Sagrada') 
+        janela4.geometry('1300x876')
+        vars2 = Label(janela4, text='² E no sétimo dia Deus já tinha acabado a obra que tinha feito; e descansou no sétimo dia de toda a obra que tinha feito.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars2.pack(fill='x')
+    versiculo2 = Button(janela2, text='VERSICULO: 2', command=versiculo2)
+    versiculo2.grid(row=0, column=1)
+    def versiculo3 ():
+        janela5 = Tk()
+        janela5.title('Biblia Sagrada')
+        janela5.geometry('1300x876')
+        vars3 = Label(janela5, text='³ E Deus abençoou o sétimo dia e o santificou, porque nele descansou de toda a obra que tinha criado e feito.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars3.pack(fill='x')
+    versiculo3 = Button(janela2, text='VERSICULO: 3', command=versiculo3)
+    versiculo3.grid(row=0, column=2)
+
 
 ge = Button(janela, text='Genisis', command=janela1)
 ge.pack(side=TOP)
