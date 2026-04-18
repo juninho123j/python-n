@@ -214,7 +214,7 @@ def janela1 ():
                 vers20.pack(fill='x')
                 janela21.mainloop()
             ger19 = Button(janela2, text='VERSICULO: 20', command=ger19)    
-            ger19.pack(side=TOP)
+            ger19.grid(row=3, column=1)
 
             def ger20 ():
                 janela22 = Tk()
@@ -224,7 +224,7 @@ def janela1 ():
                 vers21.pack(fill='x')
                 janela22.mainloop()
             ger20 = Button(janela2, text='VERSICULO: 21', command=ger20)
-            ger20.pack(side=TOP)
+            ger20.grid(row=3, column=2)
 
             def ger21 ():
                 janela23 = Tk()
@@ -234,7 +234,7 @@ def janela1 ():
                 vers22.pack(fill='x')
                 janela23.mainloop()
             ger21 = Button(janela2, text='VERSICULO: 22', command=ger21)
-            ger21.pack(side=TOP)
+            ger21.grid(row=3, column=3)
 
             def ger22 ():
                 janela24 = Tk()
@@ -244,7 +244,7 @@ def janela1 ():
                 vers23.pack(fill='x')
                 janela24.mainloop()
             ger22 = Button(janela2, text='VERSICULO: 23', command=ger22)
-            ger22.pack(side=TOP)
+            ger22.grid(row=3, column=4)
 
             def ger23 ():
                 janela25 = Tk()
@@ -254,7 +254,7 @@ def janela1 ():
                 vers24.pack(fill='x')
                 janela25.mainloop()
             ger23 = Button(janela2, text='VERSICULO: 24', command=ger23, )
-            ger23.grid(row=20, column=19)
+            ger23.grid(row=3, column=5)
 
             def ger24 ():
                 janela26 = Tk()
@@ -264,7 +264,7 @@ def janela1 ():
                 vers25.pack(fill='x')
                 janela26.mainloop()
             ger24 = Button(janela2, text='VERSICULO: 25', command=ger24)
-            ger24.grid(row=20, column=20)
+            ger24.grid(row=4, column=0)
 
             def ger25 ():
                 janela27 = Tk()
@@ -274,7 +274,7 @@ def janela1 ():
                 vers26.pack(fill='x')
                 janela27.mainloop()
             ger25 = Button(janela2, text='VERSICULO: 26', command=ger25)
-            ger25.pack(side=TOP)
+            ger25.grid(row=4, column=1)
 
             def ger26 ():
                 janela28 = Tk()
@@ -284,7 +284,7 @@ def janela1 ():
                 vers27.pack(fill='x')
                 janela28.mainloop()
             ger26 = Button(janela2, text='VERSICULO: 27', command=ger26)
-            ger26.pack(side=TOP)
+            ger26.grid(row=4, column=2)
             
             def ger27 ():
                 janela29 = Tk()
@@ -294,37 +294,37 @@ def janela1 ():
                 vers28.pack(fill='x')
                 janela29.mainloop()
             ger27 = Button(janela2, text='VERSICULO: 28', command=ger27)
-            ger27.pack(side=TOP)
+            ger27.grid(row=4, column=3)
 
             def ger28 ():
                 janela30 = Tk()
                 janela30.title('Biblia Sagrada')
                 janela30.geometry('1300x876')
-                vers29 = Label(janela30, text='²⁹ E disse Deus: Eis que vos tenho dado toda erva que dá semente, que está sobre a face de toda a terra;\n e toda árvore em que há fruto que dá semente, ser-vos-á para mantimento;\n ³⁰ e a todo animal da terra, e a toda ave dos céus, e a todo réptil da terra, em que há alma vivente, toda erva verde lhes será para mantimento. E assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers29 = Label(janela30, text='²⁹ E disse Deus: Eis que vos tenho dado toda erva que dá semente,\n que está sobre a face de toda a terra; e toda árvore em que\n há fruto que dá semente ser-vos-á para mantimento;', font=('arial', 30), bg='lightblue', anchor='center')
                 vers29.pack(fill='x')
                 janela30.mainloop()
             ger28 = Button(janela2, text='VERSICULO: 29', command=ger28)
-            ger28.pack(side=TOP)
+            ger28.grid(row=4, column=4)
 
             def ger29 ():
                 janela31 = Tk()
                 janela31.title('Biblia Sagrada')
                 janela31.geometry('1300x876')
-                vers30 = Label(janela31, text='³⁰ e a todo animal da terra, e a toda ave dos céus, e a todo réptil da terra, em que há alma vivente, toda erva verde lhes será para mantimento. E assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers30 = Label(janela31, text='³⁰ e a todo animal da terra, e a toda ave dos céus,\n e a todo réptil da terra, em que há alma vivente,\n toda erva verde lhes será para mantimento. E assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers30.pack(fill='x')
                 janela31.mainloop()
             ger29 = Button(janela2, text='VERSICULO: 30', command=ger29)
-            ger29.pack(side=TOP)
+            ger29.grid(row=4, column=5)
 
             def ger30 ():
                 janela32 = Tk()
                 janela32.title('Biblia Sagrada')
                 janela32.geometry('1300x876')
-                vers31 = Label(janela32, text='³¹ E viu Deus tudo quanto tinha feito, e eis que era muito bom. E foi a tarde e a manhã, o dia sexto.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers31 = Label(janela32, text='³¹ E viu Deus tudo quanto tinha feito, e eis que era muito bom.\n E foi a tarde e a manhã, o dia sexto.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers31.pack(fill='x')
                 janela32.mainloop()
             ger30 = Button(janela2, text='VERSICULO: 31', command=ger30)
-            ger30.pack(side=TOP)
+            ger30.grid(row=5, column=0)
 
 
             janela2.mainloop()
