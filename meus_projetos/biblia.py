@@ -24,9 +24,9 @@ def janela1 ():
                 vers1 = Label(janela3, text='¹ No princípio criou Deus os céus e a terra.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers1.grid(row=20, column=20)
                 vers1.pack(fill='x') 
-                proximo = Button(janela3, text='proximo', command=ger2)
-                proximo.pack(side=BOTTOM)
                 janela3.mainloop()
+
+                
             ger1 = Button(janela2, text='VERSICULO: 1', command=ger1)
             ger1.grid(row=0, column=0)
             def ger2 ():
@@ -36,6 +36,7 @@ def janela1 ():
                 vers3 = Label(janela4, text='² E a terra era sem forma e vazia; e havia trevas sobre a face do abismo;\n e o Espírito de Deus se movia sobre a face das águas.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers3.pack(fill='x')
                 janela4.mainloop()
+            
             ger2 = Button(janela2, text='VERSICULO: 2', command=ger2)
             ger2.grid(row=0, column=1)
 
@@ -329,8 +330,6 @@ def janela1 ():
                 janela32.mainloop()
             ger30 = Button(janela2, text='VERSICULO: 31', command=ger30)
             ger30.grid(row=5, column=0)
-
-    
     janela = Button(janela1, text='capitulo: 1', command=ge)
     janela.pack(side=TOP)
     capitulo2 = Button(janela1, text='capitulo: 2', command=cap2)
@@ -405,6 +404,15 @@ def cap2 ():
         vars7.pack(fill='x')
     versiculo7 = Button(janela2, text='VERSICULO: 7', command=versiculo7)
     versiculo7.grid(row=1, column=0)
+
+    def versiculo8 ():
+        janela8 = Tk()
+        janela8.title('Biblia sagrada')
+        janela8.geometry('1300x876')
+        vers8 = Label(janela8, text='⁸ E plantou o Senhor Deus um jardim no Éden, do lado oriental;\n e pôs ali o homem que tinha formado.', font=('arial', 30), bg='lightblue', anchor='center')
+        vers8.pack(fill='x')
+    versiculo8 = Button(janela2, text='VERSICULO: 8', command=versiculo8) 
+    versiculo8.grid(row=1, column=1)
 
 
 
