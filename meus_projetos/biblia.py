@@ -334,8 +334,8 @@ def janela1 ():
     janela.pack(side=TOP)
     capitulo2 = Button(janela1, text='capitulo: 2', command=cap2)
     capitulo2.pack(side=TOP)
-    #capitulo3 = Button(janela1, text='capitulo: 3', command=cap3)
-    #capitulo3.pack(side=TOP)
+    capitulo3 = Button(janela1, text='capitulo: 3', command=cap3)
+    capitulo3.pack(side=TOP)
     janela1.mainloop()
 
 def cap2 ():
@@ -566,6 +566,21 @@ def cap2 ():
         vars25.pack(fill='x')
     versiculo25 = Button(janela2, text='VERSICULO: 25', command=versiculo25)
     versiculo25.grid(row=4, column=0)
+
+def cap3 ():
+    janela3 = Tk()
+    janela3.title('Biblia Sagrada')
+    janela3.geometry('535x600')
+    def versiculo1 ():
+        janela4 = Tk()
+        janela4.title('Biblia Sagrada')
+        janela4.geometry('1300x876')
+        vars1 = Label(janela4, text='¹ Ora, a serpente era mais astuta que todas as alimárias do campo que o Senhor Deus tinha feito.\n E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim?', font=('arial', 30), bg='lightblue', anchor='center')
+        vars1.pack(fill='x')
+    versiculo1 = Button(janela3, text='VERSICULO: 1', command=versiculo1)
+    versiculo1.pack()
+
+    janela3.mainloop()
 
 
 
