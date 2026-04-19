@@ -578,7 +578,7 @@ def cap3 ():
         vars1 = Label(janela4, text='¹ Ora, a serpente era mais astuta que todas as alimárias do campo que o Senhor Deus tinha feito.\n E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim?', font=('arial', 30), bg='lightblue', anchor='center')
         vars1.pack(fill='x')
     versiculo1 = Button(janela3, text='VERSICULO: 1', command=versiculo1)
-    versiculo1.pack()
+    versiculo1.grid(row=0, column=0)
 
     janela3.mainloop()
 
