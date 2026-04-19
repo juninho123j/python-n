@@ -414,6 +414,160 @@ def cap2 ():
     versiculo8 = Button(janela2, text='VERSICULO: 8', command=versiculo8) 
     versiculo8.grid(row=1, column=1)
 
+    def versiculo9 ():
+        janela9 = Tk()
+        janela9.title('Biblia Sagrada')
+        janela9.geometry('1300x876')
+        vars9 = Label(janela9, text='⁹ E o Senhor Deus fez brotar da terra toda árvore agradável à vista,\n e boa para comida; a árvore da vida no meio do jardim, \ne a árvore do conhecimento do bem e do mal.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars9.pack(fill='x')
+    versiculo9 = Button(janela2, text='VERSICULO: 9', command=versiculo9)
+    versiculo9.grid(row=1, column=2)
+
+    def versiculo10 ():
+        janela10 = Tk()
+        janela10.title('Biblia Sagrada')
+        janela10.geometry('1300x876')
+        vars10 = Label(janela10, text='¹⁰ E saía um rio do Éden para regar o jardim;\n e dali se dividia, e se tornava em quatro braços.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars10.pack(fill='x')
+    versiculo10 = Button(janela2, text='VERSICULO: 10', command=versiculo10)
+    versiculo10.grid(row=1, column=3)
+
+    def versiculo11 (): 
+        janela11 = Tk()
+        janela11.title('Biblia Sagrada')
+        janela11.geometry('1300x876')
+        vars11 = Label(janela11, text='¹¹ O nome do primeiro é Pisom; este é o que rodeia toda a terra de Havilá,\n onde há ouro;', font=('arial', 30), bg='lightblue', anchor='center')
+        vars11.pack(fill='x')
+    versiculo11 = Button(janela2, text='VERSICULO: 11', command=versiculo11)
+    versiculo11.grid(row=1, column=4)
+
+    def versiculo12 ():
+        janela12 = Tk()
+        janela12.title('Biblia Sagrada')
+        janela12.geometry('1300x876')
+        vars12 = Label(janela12, text='¹² O nome do segundo rio é Giom; este é o que rodeia toda a\n terra de Cuxe.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars12.pack(fill='x')
+    versiculo12 = Button(janela2, text='VERSICULO: 12', command=versiculo12)
+    versiculo12.grid(row=1, column=5)
+
+    def versiculo13 ():
+        janela13 = Tk()
+        janela13.title('Biblia Sagrada')
+        janela13.geometry('1300x876')
+        vars13 = Label(janela13, text='¹³ O nome do terceiro rio é Hidéquel; este é o que vai diante do Assírio.\n E o quarto rio é o Eufrates.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars13.pack(fill='x')   
+    versiculo13 = Button(janela2, text='VERSICULO: 13', command=versiculo13)
+    versiculo13.grid(row=2, column=0)
+
+    def versiculo14 ():
+        janela14 = Tk()
+        janela14.title('Biblia Sagrada')
+        janela14.geometry('1300x876')
+        vars14 = Label(janela14, text='¹⁴ E tomou o Senhor Deus o homem, e o pôs no jardim do Éden\n para o cultivar e guardar.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars14.pack(fill='x')
+    versiculo14 = Button(janela2, text='VERSICULO: 14', command=versiculo14)
+    versiculo14.grid(row=2, column=1)
+    
+    def versiculo15 (): 
+        janela15 = Tk()
+        janela15.title('Biblia Sagrada')
+        janela15.geometry('1300x876')
+        vars15 = Label(janela15, text='¹⁵ E ordenou o Senhor Deus ao homem, dizendo: \nDe toda árvore do jardim comerás livremente;', font=('arial', 30), bg='lightblue', anchor='center')
+        vars15.pack(fill='x')
+    versiculo15 = Button(janela2, text='VERSICULO: 15', command=versiculo15)
+    versiculo15.grid(row=2, column=2)
+
+    def versiculo16 ():
+        janela16 = Tk()
+        janela16.title('Biblia Sagrada')
+        janela16.geometry('1300x876')
+        vars16 = Label(janela16, text='¹⁶ E disse o Senhor Deus: Não é bom que o homem esteja só;\n far-lhe-ei uma ajudadora idônea para ele.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars16.pack(fill='x')
+    versiculo16 = Button(janela2, text='VERSICULO: 16', command=versiculo16)
+    versiculo16.grid(row=2, column=3)
+
+    def versiculo17 ():
+        janela17 = Tk()
+        janela17.title('Biblia Sagrada')
+        janela17.geometry('1300x876')
+        vars17 = Label(janela17, text='¹⁷ E o Senhor Deus formou da terra todo animal do campo e toda ave dos\n céus, e os trouxe ao homem para ver como ele os chamaria;\n e tudo quanto o homem chamou a toda alma vivente,\n isso foi o seu nome.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars17.pack(fill='x')
+    versiculo17 = Button(janela2, text='VERSICULO: 17', command=versiculo17)
+    versiculo17.grid(row=2, column=4)
+
+    def versiculo18 ():
+        janela18 = Tk()
+        janela18.title('Biblia Sagrada')
+        janela18.geometry('1300x876')
+        vars18 = Label(janela18, text='¹⁸ E o Senhor Deus disse: Não é bom que o homem esteja só;\n far-lhe-ei uma ajudadora idônea para ele.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars18.pack(fill='x')
+    versiculo18 = Button(janela2, text='VERSICULO: 18', command=versiculo18)
+    versiculo18.grid(row=2, column=5)
+    
+    def versiculo19 ():
+        janela19 = Tk()
+        janela19.title('Biblia Sagrada')
+        janela19.geometry('1300x876')
+        vars19 = Label(janela19, text='¹⁹ E o Senhor Deus formou da terra a mulher, e a trouxe ao homem.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars19.pack(fill='x')
+    versiculo19 = Button(janela2, text='VERSICULO: 19', command=versiculo19)
+    versiculo19.grid(row=3, column=0)
+    
+    def versiculo20 ():
+        janela20 = Tk()
+        janela20.title('Biblia Sagrada')
+        janela20.geometry('1300x876')
+        vars20 = Label(janela20, text='²⁰ E o homem disse: Esta é agora osso dos meus ossos\n e carne da minha carne; esta será chamada mulher,\n porque do homem foi tomada.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars20.pack(fill='x')
+    versiculo20 = Button(janela2, text='VERSICULO: 20', command=versiculo20)
+    versiculo20.grid(row=3, column=1)
+    
+    def versiculo21 ():
+        janela21 = Tk()
+        janela21.title('Biblia Sagrada')
+        janela21.geometry('1300x876')
+        vars21 = Label(janela21, text='²¹ Portanto deixará o homem seu pai e sua mãe, \ne se unirá à sua mulher, e serão uma só carne.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars21.pack(fill='x')
+    versiculo21 = Button(janela2, text='VERSICULO: 21', command=versiculo21)
+    versiculo21.grid(row=3, column=2)
+    
+    def versiculo22 ():
+        janela22 = Tk()
+        janela22.title('Biblia Sagrada')
+        janela22.geometry('1300x876')
+        vars22 = Label(janela22, text='²² E o homem e sua mulher estavam ambos nus,\n e não se envergonhavam.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars22.pack(fill='x')
+    versiculo22 = Button(janela2, text='VERSICULO: 22', command=versiculo22)
+    versiculo22.grid(row=3, column=3)
+    
+    def versiculo23 ():
+        janela23 = Tk()
+        janela23.title('Biblia Sagrada')
+        janela23.geometry('1300x876')
+        vars23 = Label(janela23, text='²³ E o Senhor Deus fez ao homem e à sua mulher túnicas\n de peles, e os vestiu.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars23.pack(fill='x')
+    versiculo23 = Button(janela2, text='VERSICULO: 23', command=versiculo23)
+    versiculo23.grid(row=3, column=4)
+    
+    def versiculo24 ():
+        janela24 = Tk()
+        janela24.title('Biblia Sagrada')
+        janela24.geometry('1300x876')
+        vars24 = Label(janela24, text='²⁴ E o Senhor Deus disse: Eis que o homem se tornou\n como um de nós, conhecendo o bem e o mal; ora, pois,\n para que não estenda a mão, e tome também da árvore da vida,\n e coma, e viva eternamente,', font=('arial', 30), bg='lightblue', anchor='center')
+        vars24.pack(fill='x')
+    versiculo24 = Button(janela2, text='VERSICULO: 24', command=versiculo24)
+    versiculo24.grid(row=3, column=5)
+    
+    def versiculo25 ():
+        janela25 = Tk()
+        janela25.title('Biblia Sagrada')
+        janela25.geometry('1300x876')
+        vars25 = Label(janela25, text='²⁵ Portanto lançou fora o homem; e colocou ao oriente do jardim\n do Éden querubins, e uma espada flamejante que se revolvia para\n guardar o caminho da árvore da vida.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars25.pack(fill='x')
+    versiculo25 = Button(janela2, text='VERSICULO: 25', command=versiculo25)
+    versiculo25.grid(row=4, column=0)
+
+
 
 
 ge = Button(janela, text='Genisis', command=janela1)
