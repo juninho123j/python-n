@@ -18,125 +18,292 @@ def janela1 ():
             janela2.title('Biblia sagrada')
             janela2.geometry('535x600')
             def ger1 ():
-                janela3 = Tk()
+                janela3 = Toplevel(janela2)
                 janela3.title('Biblia Sagrada')
                 janela3.geometry('1300x876')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                 vers1 = Label(janela3, text='¹ No princípio criou Deus os céus e a terra.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers1.grid(row=20, column=20)
                 vers1.pack(fill='x') 
-                janela3.mainloop()
-
-                
+                def fechar():
+                    janela3.destroy()
+                    ger45()
+                fechar = Button(janela3, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+                #fechar.pack(side=TOP)    
             ger1 = Button(janela2, text='VERSICULO: 1', command=ger1)
             ger1.grid(row=0, column=0)
+            
+            #é o ger2:
+            def ger45():
+                janela45 = Toplevel(janela2)
+                janela45.title('Biblia Sagrada')
+                janela45.geometry('1300x876')
+                vers3 = Label(janela45, text='² E a terra era sem forma e vazia; e havia trevas sobre a face do abismo;\n e o Espírito de Deus se movia sobre a face das águas.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers3.pack(fill='x')
+                def fechar():
+                    janela45.destroy()
+                    ger44()
+                fechar = Button(janela45, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+                
+            
             def ger2 ():
-                janela4 = Tk()
+                janela4 = Toplevel()
                 janela4.title('Biblia Sagrada') 
                 janela4.geometry('1300x876')
                 vers3 = Label(janela4, text='² E a terra era sem forma e vazia; e havia trevas sobre a face do abismo;\n e o Espírito de Deus se movia sobre a face das águas.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers3.pack(fill='x')
-                janela4.mainloop()
-            
+                def fechar():
+                    janela4.destroy()
+                    ger44()
+                fechar = Button(janela4, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+                
             ger2 = Button(janela2, text='VERSICULO: 2', command=ger2)
             ger2.grid(row=0, column=1)
 
-            def ger3 ():
-                janela5 = Tk()
+            #é o ger3:
+            def ger44():
+                janela5 = Toplevel(janela2)
                 janela5.title('Biblia Sagrada')
                 janela5.geometry('1300x876')
                 vers4 = Label(janela5, text='³ E disse Deus: Haja luz; e houve luz.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers4.pack(fill='x')
-                janela5.mainloop()
+                def fechar():
+                    janela5.destroy()
+                    ger78()
+                fechar = Button(janela5, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+               
+            def ger3 ():
+                janela5 = Toplevel(janela2)
+                janela5.title('Biblia Sagrada')
+                janela5.geometry('1300x876')
+                vers4 = Label(janela5, text='³ E disse Deus: Haja luz; e houve luz.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers4.pack(fill='x')
+                def fechar():
+                    janela5.destroy()
+                    ger78()
+                fechar = Button(janela5, text='PROXIMO', command=fechar, width=20, height=2)
+                fechar.pack(side=TOP)
             ger3 = Button(janela2, text='VERSICULO: 3', command=ger3)
             ger3.grid(row=0, column=2)
-    
-            def ger4 ():
-                janela6 = Tk()
+
+            #ger4:
+            def ger78():
+                janela6 = Toplevel(janela2)
                 janela6.title('Biblia Sagrada')
                 janela6.geometry('1300x876')
                 vers5 = Label(janela6, text='⁴ E viu Deus que era boa a luz;\n e fez Deus separação entre a luz e as trevas.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers5.pack(fill='x')
-                janela6.mainloop()
+                def fechar():
+                    janela6.destroy()
+                    ger36()
+                fechar = Button(janela6, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+                
+            def ger4 ():
+                janela6 = Toplevel(janela2)
+                janela6.title('Biblia Sagrada')
+                janela6.geometry('1300x876')
+                vers5 = Label(janela6, text='⁴ E viu Deus que era boa a luz;\n e fez Deus separação entre a luz e as trevas.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers5.pack(fill='x')
+                def fechar():
+                    janela6.destroy()
+                    ger36()
+                fechar = Button(janela6, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+                
             ger4 = Button(janela2, text='VERSICULO: 4', command=ger4)
             ger4.grid(row=0, column=3)
 
-            def ger5 ():
-                janela7 = Tk()
+            #ger5
+            def ger36():
+                janela7 = Toplevel()
                 janela7.title('Biblia Sagrada')
                 janela7.geometry('1300x876')
-                vers6 = Label(janela7, text='⁵ E Deus chamou à luz Dia; e às trevas chamou Noite.\n E foi a tarde e a manhã, o dia primeiro.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers6 = Label(janela7, text='⁵ E chamou Deus à luz Dia;\n e às trevas chamou Noite.\n E foi a tarde e a manhã, o dia primeiro.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers6.pack(fill='x')
-                janela7.mainloop()
+                def fechar():
+                    janela7.destroy()
+                    ger96()
+                fechar = Button(janela7, text='PROXIMO', command=fechar, width=20, height=2) .pack(side=TOP)
+               
+
+            def ger5 ():
+                janela7 = Toplevel()
+                janela7.title('Biblia Sagrada')
+                janela7.geometry('1300x876')
+                vers6 = Label(janela7, text='⁵ E chamou Deus à luz Dia;\n e às trevas chamou Noite.\n E foi a tarde e a manhã, o dia primeiro.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers6.pack(fill='x')
+                def fechar():
+                    janela7.destroy()
+                    ger96()
+                fechar = Button(janela7, text='PROXIMO', command = fechar , width=20, height=2).pack(side=TOP)
+                
             ger5 = Button(janela2, text='VERSICULO: 5', command=ger5)
-            ger5.grid(row=0, column=4)
+            ger5.grid(row=0 , column=4)
+            
+            #ger6
+            def ger96():
+                janela96 = Toplevel()
+                janela96.title('Biblia Sagrada')
+                janela96.geometry('1300x876')
+                vers7 = Label(janela96, text='⁶ E disse Deus: Haja uma expansão no meio das águas,\n e haja separação entre águas e águas.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers7.pack(fill='x')
+                def fechar():
+                    janela96.destroy()
+                    ger92()
+                fechar = Button(janela96, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
 
             def ger6 ():
-                janela8 = Tk()
+                janela8 = Toplevel()
                 janela8.title('Biblia Sagrada')
                 janela8.geometry('1300x876')
                 vers7 = Label(janela8, text='⁶ E disse Deus: Haja uma expansão no meio das águas,\n e haja separação entre águas e águas.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers7.pack(fill='x')
-                janela8.mainloop()
+                def fechar():
+                    janela8.destroy()
+                    ger92()
+                fechar = Button(janela8, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)              
             ger6 = Button(janela2, text='VERSICULO: 6', command=ger6)
             ger6.grid(row=0, column=5)
 
-            def ger7 ():
-                janela9 = Tk()
+            #ger7:
+            def ger92():
+                janela9 = Toplevel()
                 janela9.title('Biblia Sagrada')
                 janela9.geometry('1300x876')
                 vers8 = Label(janela9, text='⁷ E fez Deus a expansão, e fez separação\n entre as águas que estavam debaixo \nda expansão e as águas que estavam sobre a expansão; e assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers8.pack(fill='x')
-                janela9.mainloop()
+                def fechar():
+                    janela9.destroy()
+                    ger34()
+                fechar = Button(janela9, text='PROXIMO', command=fechar, width=20, height=2)
+                fechar.pack(side=TOP)
+            def ger7 ():
+                janela9 = Toplevel()
+                janela9.title('Biblia Sagrada')
+                janela9.geometry('1300x876')
+                vers8 = Label(janela9, text='⁷ E fez Deus a expansão, e fez separação\n entre as águas que estavam debaixo \nda expansão e as águas que estavam sobre a expansão; e assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers8.pack(fill='x')
+                def fechar():
+                    janela9.destroy()
+                    ger34()
+                    fechar(janela9, Text='PROXIMO', COMMAND=fechar, width=20, height=2).pack(side=TOP)
             ger7 = Button(janela2, text='VERSICULO: 7', command=ger7)
             ger7.grid(row=1, column=0)
 
-            def ger8 ():
-                janela10 = Tk()
+            #ger8:
+            def ger34():
+                janela10 = Toplevel()
                 janela10.title('Biblia Sagrada')
                 janela10.geometry('1300x876')
                 vers9 = Label(janela10, text='⁸ E chamou Deus à expansão Céus.\n E foi a tarde e a manhã, o dia segundo.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers9.pack(fill='x')
-                janela10.mainloop()
+                def fechar():
+                    janela10.destroy()
+                    ger87()
+                fechar = Button(janela10, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+            def ger8 ():
+                janela10 = Toplevel()
+                janela10.title('Biblia Sagrada')
+                janela10.geometry('1300x876')
+                vers9 = Label(janela10, text='⁸ E chamou Deus à expansão Céus.\n E foi a tarde e a manhã, o dia segundo.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers9.pack(fill='x')
+                def fechar():
+                    janela10.destroy()
+                    ger87()
+                fechar = Button(janela10, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
             ger8 = Button(janela2, text='VERSICULO: 8', command=ger8)
             ger8.grid(row=1, column=1)
             
-            def ger9 ():
-                janela11 = Tk()
+            #ger9:
+            def ger87():
+                janela11 = Toplevel()
                 janela11.title('Biblia Sagrada')
                 janela11.geometry('1300x876')
                 vers10 = Label(janela11, text='⁹ E disse Deus: Ajuntem-se as águas debaixo dos céus num lugar;\n e apareça a porção seca. E assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers10.pack(fill='x')
-                janela11.mainloop()
+                def fechar():
+                    janela11.destroy()
+                    ger()
+                fechar = Button(janela11, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+
+            def ger9 ():
+                janela11 = Toplevel()
+                janela11.title('Biblia Sagrada')
+                janela11.geometry('1300x876')
+                vers10 = Label(janela11, text='⁹ E disse Deus: Ajuntem-se as águas debaixo dos céus num lugar;\n e apareça a porção seca. E assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers10.pack(fill='x')
+                def fechar():
+                    janela11.destroy()
+                    ger()
+                fechar = Button(janela11, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
             ger9 = Button(janela2, text='VERSICULO: 9', command=ger9)
             ger9.grid(row=1, column=2)
             
-            def ger10 ():
-                janela12 = Tk()
+            #ger10
+            def ger():
+                janela12 = Toplevel()
                 janela12.title('Biblia Sagrada')
                 janela12.geometry('1300x876')
                 vers11 = Label(janela12, text='¹⁰ E chamou Deus à porção seca Terra;\n e ao ajuntamento das águas chamou Mares.\n E viu Deus que era bom.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers11.pack(fill='x')
-                janela12.mainloop()
+                def fechar():
+                    janela12.destroy()
+                    ger56()
+                fechar = Button(janela12, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+            def ger10 ():
+                janela12 = Toplevel()
+                janela12.title('Biblia Sagrada')
+                janela12.geometry('1300x876')
+                vers11 = Label(janela12, text='¹⁰ E chamou Deus à porção seca Terra;\n e ao ajuntamento das águas chamou Mares.\n E viu Deus que era bom.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers11.pack(fill='x')
+                def fechar():
+                    janela12.destroy()
+                    ger56()
+                fechar = Button(janela12, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
             ger10 = Button(janela2, text='VERSICULO: 10', command=ger10)
             ger10.grid(row=1, column=3)
             
-            def ger11 ():
-                janela13 = Tk()
+            #ger11
+            def ger56():
+                janela13 = Toplevel()
                 janela13.title('Biblia Sagrada')
                 janela13.geometry('1300x876')
-                vers12 = Label(janela13, text='¹¹ E disse Deus: Produza a terra relva, ervas que dêem semente,\n árvores frutíferas que dêem fruto segundo a sua espécie, cuja semente esteja nela,\n sobre a terra. E assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers11 = Label(janela13, text='¹¹ E disse Deus: Produza a terra relva, ervas que dêem semente,\n árvores frutíferas que dêem fruto segundo \na sua espécie, cuja semente esteja nela,\n sobre a terra. E assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers11.pack(fill='x')
+                def fechar():
+                    janela13.destroy()
+                    ger1000()
+                fechar = Button(janela13, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+            def ger11 ():
+                janela13 = Toplevel()
+                janela13.title('Biblia Sagrada')
+                janela13.geometry('1300x876')
+                vers12 = Label(janela13, text='¹¹ E disse Deus: Produza a terra relva, ervas que dêem semente,\n árvores frutíferas que dêem fruto segundo\n a sua espécie, cuja semente esteja nela,\n sobre a terra. E assim foi.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers12.pack(fill='x')
-                janela13.mainloop()
+                def fechar():
+                    janela13.destroy()
+                    ger1000()
+                fechar = Button(janela13, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
             ger11 = Button(janela2, text='VERSICULO: 11', command=ger11)
             ger11.grid(row=1, column=4)
 
-            def ger12 ():
-                janela14 = Tk()
+            #ger12:
+
+            def ger1000():
+                janela14 = Toplevel()
                 janela14.title('Biblia Sagrada')
                 janela14.geometry('1300x876')
-                vers13 = Label(janela14, text='¹² E a terra produziu relva, ervas que davam semente segundo a sua espécie,\n e árvores que davam fruto, cuja\n semente estava nela, segundo a sua espécie.\n E viu Deus que era bom.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers13 = Label(janela14, text='¹² E a terra produziu relva, ervas que davam semente segundo \na sua espécie, e árvores que davam fruto, cuja\n semente estava nela, segundo a sua espécie.\n E viu Deus que era bom.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers13.pack(fill='x')
-                janela14.mainloop()
+                
+            def ger12 ():
+                janela14 = Toplevel()
+                janela14.title('Biblia Sagrada')
+                janela14.geometry('1300x876')
+                vers13 = Label(janela14, text='¹² E a terra produziu relva, ervas que davam semente segundo \na sua espécie, e árvores que davam fruto, cuja\n semente estava nela, segundo a sua espécie.\n E viu Deus que era bom.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers13.pack(fill='x')
+                def fechar():
+                    janela14.destroy()
+                    ger()
+                fechar = Button(janela14, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
             ger12 = Button(janela2, text='VERSICULO: 12', command=ger12)
             ger12.grid(row=1, column=5)
 
@@ -342,7 +509,6 @@ def cap2 ():
     janela2 = Tk()
     janela2.title('Biblia sagrada')
     janela2.geometry('535x600')
-    
     def versiculo1 ():
         janela3 = Tk()
         janela3.title('Biblia Sagrada')
@@ -554,10 +720,10 @@ def cap2 ():
         janela24.title('Biblia Sagrada')
         janela24.geometry('1300x876')
         vars24 = Label(janela24, text='²⁴ E o Senhor Deus disse: Eis que o homem se tornou\n como um de nós, conhecendo o bem e o mal; ora, pois,\n para que não estenda a mão, e tome também da árvore da vida,\n e coma, e viva eternamente,', font=('arial', 30), bg='lightblue', anchor='center')
-        vars24.pack(fill='x')
+        vars24.pack(fill='x') 
     versiculo24 = Button(janela2, text='VERSICULO: 24', command=versiculo24)
     versiculo24.grid(row=3, column=5)
-    
+   
     def versiculo25 ():
         janela25 = Tk()
         janela25.title('Biblia Sagrada')
@@ -567,22 +733,61 @@ def cap2 ():
     versiculo25 = Button(janela2, text='VERSICULO: 25', command=versiculo25)
     versiculo25.grid(row=4, column=0)
 
+
+    janela.mainloop()
+
 def cap3 ():
-    janela3 = Tk()
+    janela3 = Toplevel(janela)
     janela3.title('Biblia Sagrada')
-    janela3.geometry('535x600')
+    janela3.geometry('1000x600')
     def versiculo1 ():
-        janela4 = Tk()
+        janela4 = Toplevel(janela3)
         janela4.title('Biblia Sagrada')
         janela4.geometry('1300x876')
-        vars1 = Label(janela4, text='¹ Ora, a serpente era mais astuta que todas as alimárias do campo que o Senhor Deus tinha feito.\n E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim?', font=('arial', 30), bg='lightblue', anchor='center')
+        vars1 = Label(janela4, text='¹ Ora, a serpente era o mais astuto de todos os animais\n do campo que o Senhor Deus tinha feito.\n E ela disse à mulher: É assim que Deus disse:\n Não comereis de toda árvore do jardim?', font=('arial', 30), bg='lightblue', anchor='center')
         vars1.pack(fill='x')
-    versiculo1 = Button(janela3, text='VERSICULO: 1', command=versiculo1)
+        def fechar():
+            janela4.destroy()
+            versiculo78()
+        fechar = Button(janela4, text='Fechar', command=fechar, width=20, height=2)
+        fechar.pack(side=TOP)
+    versiculo1 = Button(janela3, text='VERSICULO: 1', command=versiculo1, width=20, height=2)
     versiculo1.grid(row=0, column=0)
 
-    janela3.mainloop()
+    def versiculo78 ():
+        janela5 = Toplevel(janela3)
+        janela5.title('Biblia Sagrada')
+        janela5.geometry('1300x876')
+        vars2 = Label(janela5, text='² E a mulher disse à serpente:\n Do fruto das árvores do jardim podemos comer;\n ² mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars2.pack(fill='x')
+        def fechar():
+            janela5.destroy()
+            versiculo3()
+        fechar = Button(janela5, text='Fechar', command=fechar, width=20, height=2)
+        fechar.pack(side=TOP)
+    
+    def versiculo2 ():
+        janela5 = Toplevel(janela3)
+        janela5.title('Biblia Sagrada')
+        janela5.geometry('1300x876')
+        vars2 = Label(janela5, text='² E a mulher disse à serpente:\n Do fruto das árvores do jardim podemos comer;\n ² mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars2.pack(fill='x')
+    versiculo2 = Button(janela3, text='VERSICULO: 2', command=versiculo2, width=20, height=2)
+    versiculo2.grid(row=0, column=1)
 
-
+    def versiculo3 ():
+        janela6 = Toplevel(janela3)
+        janela6.title('Biblia Sagrada')
+        janela6.geometry('1300x876')
+        vars3 = Label(janela6, text='³ E a serpente disse à mulher: Certamente não morrereis;\n ³ mas Deus sabe que no dia em que dele comerdes,\n se abrirão os vossos olhos, e sereis como Deus, conhecendo o bem e o mal.', font=('arial', 30), bg='lightblue', anchor='center')
+        vars3.pack(fill='x')
+        def fechar():
+            janela6.destroy()
+            #versiculo4()
+        fechar = Button(janela6, text='Fechar', command=fechar, width=20, height=2)
+        fechar.pack(side=TOP)
+    versiculo3 = Button(janela3, text='VERSICULO: 3', command=versiculo3, width=20, height=2)
+    versiculo3.grid(row=0, column=2)
 
 
 ge = Button(janela, text='Genisis', command=janela1)
