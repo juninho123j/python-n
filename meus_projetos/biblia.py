@@ -20,7 +20,7 @@ def janela1 ():
             def ger1 ():
                 janela3 = Toplevel(janela2)
                 janela3.title('Biblia Sagrada')
-                janela3.geometry('1300x876')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                janela3.attributes('-fullscreen', True)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                 vers1 = Label(janela3, text='¹ No princípio criou Deus os céus e a terra.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers1.grid(row=20, column=20)
                 vers1.pack(fill='x') 
@@ -28,7 +28,7 @@ def janela1 ():
                     janela3.destroy()
                     ger45()
                 fechar = Button(janela3, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
-                #fechar.pack(side=TOP)    
+                fechar.pack(side=TOP)    
             ger1 = Button(janela2, text='VERSICULO: 1', command=ger1)
             ger1.grid(row=0, column=0)
             
@@ -36,26 +36,52 @@ def janela1 ():
             def ger45():
                 janela45 = Toplevel(janela2)
                 janela45.title('Biblia Sagrada')
-                janela45.geometry('1300x876')
+                janela45.attributes('-fullscreen', True)
                 vers3 = Label(janela45, text='² E a terra era sem forma e vazia; e havia trevas sobre a face do abismo;\n e o Espírito de Deus se movia sobre a face das águas.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers3.pack(fill='x')
                 def fechar():
                     janela45.destroy()
                     ger44()
-                fechar = Button(janela45, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
+                fechar = Button(janela45, text='PROXIMO', command=fechar, width=20, height=2).pack(side=BOTTOM)
+                def voltar():
+                    janela45.destroy()
+                    ger1()
+                voltar = Button(janela45, text='VOLTAR', command= voltar, width=20, height=2).pack(side=BOTTOM)
+            def ger1 ():
+                janela3 = Toplevel(janela2)
+                janela3.title('Biblia Sagrada')
+                janela3.attributes('-fullscreen', True)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                vers1 = Label(janela3, text='¹ No princípio criou Deus os céus e a terra.', font=('arial', 30), bg='lightblue', anchor='center')
+                vers1.grid(row=20, column=20)
+                vers1.pack(fill='x')
+                def voltar():
+                    janela3.destroy()
+                voltar = Button(janela3, text='VOLTAR', command=voltar, width=20, height=2).pack(side=BOTTOM)
                 
-            
             def ger2 ():
                 janela4 = Toplevel()
                 janela4.title('Biblia Sagrada') 
-                janela4.geometry('1300x876')
+                janela4.attributes('-fullscreen', True)
                 vers3 = Label(janela4, text='² E a terra era sem forma e vazia; e havia trevas sobre a face do abismo;\n e o Espírito de Deus se movia sobre a face das águas.', font=('arial', 30), bg='lightblue', anchor='center')
                 vers3.pack(fill='x')
                 def fechar():
                     janela4.destroy()
                     ger44()
                 fechar = Button(janela4, text='PROXIMO', command=fechar, width=20, height=2).pack(side=TOP)
-                
+                def voltar():
+                    janela4.destroy()
+                    ger1()
+                voltar = Button(janela4, text='VOLTAR', command=voltar, width=20, height=2).pack(side=BOTTOM)
+                def ger1 ():
+                    janela3 = Toplevel(janela2)
+                    janela3.title('Biblia Sagrada')
+                    janela3.attributes('-fullscreen', True)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                    vers1 = Label(janela3, text='¹ No princípio criou Deus os céus e a terra.', font=('arial', 30), bg='lightblue', anchor='center')
+                    vers1.grid(row=20, column=20)
+                    vers1.pack(fill='x')
+                    def voltar():
+                        janela3.destroy()
+                    voltar = Button(janela3, text='VOLTAR', command=voltar, width=20, height=2).pack(side=BOTTOM)
             ger2 = Button(janela2, text='VERSICULO: 2', command=ger2)
             ger2.grid(row=0, column=1)
 
