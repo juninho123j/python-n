@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(114, 145, 247);
+    color: black;
+    text-align: center;
+}
+.titulos{
+    background-color: rgb(114, 145, 247);
+}
+button{
+    border-style: circle;
+    color: black;
+    border-color: black;
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px
+    rgba(0, 0, 0, 0.3);
+}
+button:hover{
+    transform: translate(black);
+    box-shadow: 0 6px 15px black;
+}
+input{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px 24px;
+}
