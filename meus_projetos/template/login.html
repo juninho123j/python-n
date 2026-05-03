@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+   
 <body>
    
-   <P>qual é seu nome de usuario ?<input type="text" name="usuario" placeholder="nome"></P>
-        <button onclick="document.location='http://127.0.0.1:5000/inicio'">logar</button>
-      
-        
+   <h1 class="titulos">qual é seu nome de usuario ?</h1>
+   <form action="/inicio" method="POST">
+     <input type="text" name="usuario" placeholder="digite seu nome">
+     <h1 class="botão1">
+     <button onclick="document.location='http://127.0.0.1:5000/inicio'">Logar</button>
+      </h1>
+    </form>    
 </body>
 </html>
