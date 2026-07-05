@@ -47,18 +47,12 @@ for _ in range(1):
             
 print(notas)
 for i in range(quant_alunos):
-    
     cursor.execute('use escola')
     cursor.execute(f'insert into alunos (nome, nota, media ) values ("{nomes[0+i]}", "{nota[0 + i]}",{nota[0 + i]/2})')
     conecxão.commit()
-print(f'''
-      -----------------
-      [A Média é {result:.1f}]
-      -----------------
-''')
-for alunos, notas in zip(alunos, notas):
-    print(f'''
-     nome - nota
-    {alunos, notas}
-''')
+cursor.execute("select nome, nota, media from alunos")
+print([coluna[0] for coluna in cursor.description])
+for linha in cursor.fetchall():
+    print(linha)
+
 
