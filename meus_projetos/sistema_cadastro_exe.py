@@ -1,14 +1,7 @@
 from tkinter import *
 import tkinter as tk
-import mysql.connector
-conecxão = mysql.connector.connect(
-    host = 'localhost',
-    user = 'root',
-    password = '8446',
-    port = '3306',
-    database = 'cadastro'
-)
-
+from banco import conect
+conecxão = conect()
 print('conecxão bem sucedida')
 cursor = conecxão.cursor()
 
